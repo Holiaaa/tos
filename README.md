@@ -5,6 +5,7 @@ TOS is a 16bit real mode operating system coded in C and Assembly.
 ## Build 
 To build TOS you will need :
 - i686-elf-toolchain
+- nasm
 - qemu
 - gnu-utils (such as make, dd, cat...)
 
