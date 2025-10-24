@@ -12,5 +12,5 @@ TOS is a 16bit real mode operating system coded in C and Assembly.
 - Download the i686-elf-toolchain & QEMU for your system.
 - You can take the command from the `build.bat` file and transpose them into a shell/bash file.
 - Then you can launch your shell file.
-- (Important: You can use the powershell file if you have powershell install, otherwise you will need to have `dd` or smth like this to perform the same actions)
+- (Important: You can use the powershell file if you have powershell installed, otherwise you will need to have `dd` or smth like this to perform the same actions)
 
