@@ -9,5 +9,7 @@ To build TOS you will need :
 - gnu-utils (such as make, dd, cat...)
 
 `make` : build the bootloader, os and the disk image
+
 `make clean` : remove the build folder
+
 `make run` : run in QEMU the disk image
