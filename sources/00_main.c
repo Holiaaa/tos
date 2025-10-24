@@ -3,7 +3,15 @@
 
 _start {
     change_graphic_mode(VIDEO_G_640x350_EGA_16COLORS_A0000);
-    print("Hello organized OS!\nHow are you today ?", RED);
+    uint8_t boot_disk = *(uint8_t *)BOOT_DISK_ADDR;
+
+    print("TOS 1.0\n", WHITE);
+
+    if (boot_disk >= 0x80) {
+        print("Booting from HDD", WHITE);
+    } else {
+        print("Booting from a Floppy Disk", WHITE);
+    }
 
     for (;;) asm("hlt");
 }
