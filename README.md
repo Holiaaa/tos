@@ -3,14 +3,11 @@
 TOS is a 16bit real mode operating system coded in C and Assembly.
 
 ## Build 
-### Windows
-- Download the i686-elf-toolchain & QEMU for Windows. (add binaries to the PATH)
-- Allow powershell script to run on your computer.
-- Then launch the `build.bat` file.
+To build TOS you will need :
+- i686-elf-toolchain
+- qemu
+- gnu-utils (such as make, dd, cat...)
 
-### Linux & Unix type OS
-- Download the i686-elf-toolchain & QEMU for your system.
-- You can take the command from the `build.bat` file and transpose them into a shell/bash file.
-- Then you can launch your shell file.
-- (Important: You can use the powershell file if you have powershell installed, otherwise you will need to have `dd` or smth like this to perform the same actions)
-
+`make` : build the bootloader, os and the disk image
+`make clean` : remove the build folder
+`make run` : run in QEMU the disk image
