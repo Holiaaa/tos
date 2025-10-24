@@ -1,0 +1,44 @@
+#ifndef IO_H
+#define IO_H
+
+#include "stdint.h"
+
+#define MAX_PRINT 256
+
+#define VIDEO_T_40x25_ABMDA_16GRAY_B8000 0x00
+#define VIDEO_T_40x25_ABMDA_16FORE8BACK_B8000 0x01
+#define VIDEO_T_80x25_ABMDA_16GRAY_B8000 0x02
+#define VIDEO_T_80x25_ABMDA_16FORE8BACK_B8000 0x03
+#define VIDEO_G_320x200_ABMDA_4COLORS_B8000 0x04
+#define VIDEO_G_320x200_ABMDA_4GRAY_B8000 0x05
+#define VIDEO_G_640x200_ABMDA_2COLORS_B8000 0x06
+#define VIDEO_T_80x25_MDAxEGA_BW_B0000 0x07
+#define VIDEO_G_160x200_PCjr_16COLORS_B0000 0x08
+#define VIDEO_G_320x200_PCjr_16COLORS_B0000 0x09
+#define VIDEO_G_640x200_PCjr_4COLORS_B0000 0x0A
+#define VIDEO_G_320x200_EGA_16COLORS_A0000 0x0D
+#define VIDEO_G_640x200_EGA_16COLORS_A0000 0x0E
+#define VIDEO_G_640x350_EGA_BW_A0000 0x0F
+#define VIDEO_G_640x350_EGA_16COLORS_A0000 0x10
+
+#define BLACK 0x00
+#define BLUE 0x01
+#define GREEN 0x02
+#define CYAN 0x03
+#define RED 0x04
+#define MAGENTA 0x05
+#define BROWN 0x06
+#define LIGHT_GRAY 0x07
+#define DARK_GRAY 0x08
+#define LIGHT_BLUE 0x09
+#define LIGHT_GREEN 0x0A
+#define LIGHT_CYAN 0x0B
+#define LIGHT_RED 0x0C
+#define LIGHT_MAGENTA 0x0D
+#define YELLOW 0x0E
+#define WHITE 0x0F
+
+void print(const char *str, const uint8_t color);
+void change_graphic_mode(uint8_t mode);
+
+#endif
