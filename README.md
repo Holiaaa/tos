@@ -1,2 +1,1 @@
-# tos
-Téo Operating System
+# Téo Operating System
